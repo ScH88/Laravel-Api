@@ -15,3 +15,5 @@
 Route::get('/', 'PodcastController@index');
 //SINGLE EPISODE PAGE
 Route::get('/podcasts/{id}', 'PodcastController@show');
+//Return all PodcastResources from the ApiController for testing
+Route::get('testcollectall', 'ApiController@index');
